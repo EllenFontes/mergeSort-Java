@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merge Sort</title>
+
+    <!-- Inclusão do Tailwind CSS -->
+    <link th:href="@{/css/dist/output.css}" rel="stylesheet">
+
+</head>
+<body>
+<h1 class="">TESTE</h1>
+<form th:action="@{/merge}" th:object="${dados}" method="post">
+    <input type="number" id="num1" name="num1" >
+    <input type="number" id="num2" name="num2" >
+    <input type="number" id="num3" name="num3" >
+    <input type="number" id="num4" name="num3" >
+
+    <button type="submit">Ordenar</button>
+
+    <p>Soma: <span th:text="${dados.list}">Lista</span></p>
+</form>
+</body>
+</html>
